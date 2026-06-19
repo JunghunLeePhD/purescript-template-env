@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y libtinfo5 git
 
 USER node
 
-RUN npm install -g purescript spago
+RUN npm install -g purescript spago purs-tidy
 
 RUN cat <<'EOF' >> /home/node/.zshrc
 
